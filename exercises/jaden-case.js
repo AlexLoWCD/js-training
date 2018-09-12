@@ -10,10 +10,11 @@
  *
  */
 
-
+const jadenCase = _str => _str.replace(/^\w?|\s([\w])/g, c => c.toUpperCase())
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase("how are you ?"), "How Are You ?")
 // End of tests */
