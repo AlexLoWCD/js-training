@@ -8,6 +8,7 @@
  */
 
 // Your code :
+const getLast = _array => [ ..._array ].pop()
 
 //* Begin of tests
 const assert = require('assert')
