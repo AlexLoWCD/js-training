@@ -9,6 +9,7 @@
  */
 
 // Your code :
+const multiply = (a, b) => Array.from({ length: Math.abs(b) }).fill(a).reduce((n1, n2) => b > 0 ? n1 + n2 : n1 - n2, 0)
 
 //* Begin of tests
 const assert = require('assert')
